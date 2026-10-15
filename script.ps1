@@ -383,7 +383,6 @@ try {
     }
 
     Write-Progress -Activity 'Сбор медиаархива' -Completed
-    Write-Host ''$ExifOutput = @(& $ExifToolPath '-charset' 'filename=UTF8' '-@' $ArgFile 2>$null)
     Write-Host '========== ИТОГО ==========' -ForegroundColor Cyan
     Write-Host "Найдено фото: $($Stats.FoundPhotos)"
     Write-Host "Найдено видео: $($Stats.FoundVideos)"
